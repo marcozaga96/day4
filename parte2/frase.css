@@ -7,4 +7,47 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
+#testoAlternato {
+  border: 1px solid grey;
+  margin: 200px;
+  padding: 20px;
+  width: 800px;
+  height: 200px;
+  font-size: xx-large;
+  font-family: "Bree Serif";
+  position: relative;
+}
+.parole i {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+#n1 {
+  animation: dissolvenza 6s linear 0s infinite;
+}
+#n2 {
+  animation: dissolvenza 6s linear 3s infinite;
+}
+#n3 {
+  animation: dissolvenza 6s linear 6s infinite;
+}
+.parole {
+  color: grey;
+  position: relative;
+}
 
+@keyframes dissolvenza {
+  0% {
+    opacity: 0;
+    transform: translateX(5em);
+  }
+  15% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
