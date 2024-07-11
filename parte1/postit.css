@@ -1,0 +1,42 @@
+#cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  box-shadow: 8px 9px 11px -1px rgba(0, 0, 0, 0.75);
+  font-family: "Indie Flower";
+  line-height: 2em;
+}
+h2 {
+  font-weight: bold;
+  font-size: 2em;
+}
+.n1,
+.n5,
+.n7 {
+  background-color: rgb(246, 246, 223);
+  transform: rotate(5deg);
+}
+.n2,
+.n4,
+.n8 {
+  background-color: rgb(191, 245, 191);
+  transform: rotate(-5deg);
+}
+.n3,
+.n6 {
+  background-color: rgb(231, 210, 251);
+  transform: rotate(2deg);
+}
+.card:hover {
+  transform: scale(1.5);
+}
