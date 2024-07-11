@@ -39,4 +39,5 @@ h2 {
 }
 .card:hover {
   transform: scale(1.5);
+  transition: transform 1s;
 }
